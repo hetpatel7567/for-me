@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body class="bodycss">
+    <div class="moviecss">
+
+    
+    <h1>Movie Search</h1>
+
+    <input type="text" id="movieName" placeholder="Enter movie name" oninput="getMovieSuggestions()">
+    <ul id="movieSuggestions"></ul>
+    <button onclick="searchMovie()">Search Movie</button>
+    <div id="movieResult"></div>
+</div>
+    <button id="movieCopyButton" onclick="copyMovieToClipboard()" disabled>Copy Movie URL</button>
+
+
+    <h1>Series Search</h1>
+    <input type="text" id="seriesName" placeholder="Enter series name" oninput="getSeriesSuggestions()">
+    <ul id="seriesSuggestions"></ul>
+    <button onclick="searchSeries()">Search Series</button>
+    <div id="seriesResult"></div>
+
+    <button id="seriesCopyButton" onclick="copySeriesToClipboard()" disabled>Copy Series URL</button>
+</body>
+</html>
